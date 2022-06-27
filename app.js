@@ -8,7 +8,7 @@ const genereteHTML = pokemons => pokemons.reduce((accumulator, pokemon) => {
         
     accumulator += `
         <li class="card ${types[0]}">
-            <img glass="card-image ${types[0]}" alt="${pokemon.name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"/>
+            <img class="card-image ${types[0]}" alt="${pokemon.name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"/>
             <h2 class="card-title">${pokemon.id}. ${pokemon.name}</h2>
             <p class="card-subtitle">${pokemon.types.map(typeInfo => typeInfo.type.name).join(' | ')}</p>
         </li>
